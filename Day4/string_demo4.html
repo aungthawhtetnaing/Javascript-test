@@ -1,0 +1,24 @@
+<html>
+    <script>
+        let str = 'Hello world ' ;
+
+        console.log('indexof',str.indexOf('o'));
+        console.log('indexof',str.indexOf('k'));
+        console.log('lastindexof',str.lastIndexOf('l'));
+        console.log('indexof',str.indexOf('l',4));
+        console.log('startwith',str.startsWith('hel'));
+        console.log('startwith tolowercase',str.toLowerCase().startsWith('hel'));
+
+        console.log('end with',str.endsWith('rld'));
+        console.log('trim',str.trim(''));
+        console.log('end with',str.trim().endsWith('rld'));
+        console.log('include',str.includes('rld'));
+        console.log('replace rr',str.replace('ll','rr'));
+        console.log('charat',str.charAt(0));
+        console.log('charatcode',str.charCodeAt(0));
+        console.log('pad start','price'.padStart(10,'*'));
+        console.log('pad end','price'.padEnd(10,'*'));
+        console.log('concat',str.concat('Good Morning'));
+        console.log('repeat5',str.repeat(5));
+    </script>
+</html>

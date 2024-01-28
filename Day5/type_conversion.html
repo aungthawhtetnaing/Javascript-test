@@ -1,0 +1,30 @@
+<html>
+    <script>
+        let flag = 'False' ;//expliclit conversion
+        console.log('false',!!flag);
+
+        let a = '10' ;
+        console.log('toChangeNumber',+a);
+        let b = a*2 ;//implicit conversion
+
+        console.log('b',b);
+
+        let c =''+10 ;
+        console.log('change string', c);
+
+        console.log('undefined',+undefined);
+        console.log('null',+null);
+        console.log('true',+true);
+        console.log('false',+false);
+        console.log('""',+"");
+        console.log('100',+100);
+        console.log('one',+'twelve');
+        console.log('[]',+[]);
+
+        console.log('!! null',!!null);
+        console.log('!! undefined',!!undefined);
+        console.log('!! NaN',!!NaN);
+        console.log('!! 112',!!112);
+        console.log('!! ""',!!"");
+    </script>
+</html>

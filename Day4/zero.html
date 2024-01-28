@@ -1,0 +1,17 @@
+<html>
+    <script>
+        let posZero = 0 ;
+        let negZero = -0 ;
+        console.log('posZero == negZero',posZero == negZero);
+        console.log('posZeroInfinity == negZeroInfinity',1/posZero == 1/negZero);
+
+        let x = 0.3 - 0.2 ;
+        console.log('x = 0.1',x == 0.1);
+        console.log('x val', x);
+
+        let str = '1' + '0' .repeat(100);
+        let num = BigInt(str) ;
+        console.log('useBig Int', num);
+        console.log('useBig Int +1', num + BigInt(1));
+    </script>
+</html>

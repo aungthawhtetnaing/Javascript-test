@@ -1,0 +1,18 @@
+<html>
+    <script>
+        function get(){
+            let a = 'Hello';
+            {//block scope
+                //console.log('a',a); error
+               let a = 10 ; 
+               console.log('a',a);
+
+            //    let a = 10 ; 
+            //    console.log('a',a); error
+            }
+            console.log('a',a);
+        }
+
+        get();
+    </script>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <script>
+        let str = 'hello "world"';
+        console.log('string', str);
+
+        str = "hello 'World'" ;
+        console.log('string',str);
+
+        str = 'Hello \'world \'';
+        console.log('string',str);
+
+        str ='hello\n'
+                +'world';
+        console.log('string',str);
+
+        let a = 1 ;
+        let b = 2 ;
+
+        str = `
+        hello ${a}
+        hopwe ${b}
+        you ${a+b}
+        `;
+        console.log('string',str);
+    </script>
+</html>

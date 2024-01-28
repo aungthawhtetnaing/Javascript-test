@@ -1,0 +1,30 @@
+<html>
+    <script>
+        let pro = {
+            name : 'AT' ,
+            age : 22 ,
+            fun(){
+                console.log('Hello world');
+                return 1
+            },
+            toString(){
+                console.log('string involve');
+                return '123';
+            },
+            valueOf(){
+                console.log('value involve');
+                return true;
+            }
+            // valueOf(){
+            //     console.log('value involve');
+            //     return [];
+            // }
+        }
+
+        console.log('obj',pro.fun());
+        console.log('obj to string',pro.toString());
+        console.log('obj to string',''+pro);
+        
+        console.log('to number',+pro);
+    </script>
+</html>

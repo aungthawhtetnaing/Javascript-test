@@ -1,0 +1,25 @@
+<html>
+    <script>
+        var a = 20;
+
+        let b,c = 30 ;
+       // console.log(a);
+        console.log(b);
+        console.log(c);
+
+        d = 200 ;
+        console.log(d);
+
+        function get(){
+            //let a
+            console.log('hello');
+            console.log('a',a);//a=undefined beacause of stepbystep
+            console.log('hello world');
+            var a = 10 ;//a=10 let is function scope
+            console.log('a',a);
+        }
+        get();
+
+        console.log('window of a',window.a);
+    </script>
+</html>

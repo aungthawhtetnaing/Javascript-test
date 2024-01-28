@@ -1,0 +1,31 @@
+<html>
+    <script>
+        console.log("4<3",4 < 3);
+        console.log("4>3",4 > 3);
+
+        console.log("4<=3",4 <= 3);
+        console.log("4=>3",4 >= 3);
+
+
+        let obj = {
+            valueOf(){
+                console.log('string value');
+                return 100;
+            }
+        }
+        console.log("obj > 10", obj > 10);
+
+        obj = {
+            valueOf(){
+                console.log('string value');
+                return '100'
+            }
+        }
+        console.log("obj > 10", obj > 10);
+        console.log("A < B","A"<"B");
+        console.log("true > false",true > false);
+        console.log("true>undefined",true > undefined);
+        console.log(' 1 > BigInt(0) ',1 > BigInt(0));
+        console.log(' "11" < "3" ','11' < '3');
+    </script>
+</html>

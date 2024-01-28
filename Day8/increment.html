@@ -1,0 +1,24 @@
+<html>
+    <script>
+         let e = 10 ;
+        let h = e ++ ;// h = 10 , e=11
+        console.log('e',e,'h',h);
+
+        h = ++ e ;//h=12 e =12
+        console.log('e',e,'h',h);
+
+        let a = "100" ;
+        console.log('a', typeof a);
+
+        a++ ;
+        console.log('a++',typeof a);
+
+        let obj = {
+            typeof(){
+                return "100";
+            }
+        }
+        obj++ ;
+        console.log('obj',typeof obj);
+    </script>
+</html>

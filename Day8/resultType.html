@@ -1,5 +1,25 @@
 <html>
     <script>
-        
+        let a = '100';
+        let obj ={
+            valueOf(){
+                return 10 ;
+            }
+        }
+        let b = 20 ;
+        let c = a * b + obj ;
+        console.log('c',c);
+
+        let g = false + 10 + true ;
+        console.log('g',g);
+
+        obj = {
+             valueOf(){
+                return "10";
+            }
+        }
+        c = 10 + obj ;
+        //c = obj + 20 ;
+        console.log('number+string',c);
     </script>
 </html>

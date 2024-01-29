@@ -1,0 +1,39 @@
+<html>
+    <script>
+        let arr = [20,30,49] ;
+
+        for (const item of arr ) //item = arr[i]
+        {
+            console.log('for of ', item);
+        }
+
+        for( let i = 0 ; i < arr.length ; i ++ )
+        {
+            console.log('arr['+i+'] for loop' ,arr[i] );
+            arr[i] *= 2 ;
+
+        }
+        console.log(arr);
+
+        let obj = {
+            name : "aung thaw" ,
+            age : 22 
+        }
+        for ( const key of Object.keys(obj))
+        {
+            console.log('var',key ,'value',obj[key]);
+        }
+
+
+        console.log('var key ', Object.keys(obj));
+
+        for (const value of Object.values(obj) )
+        {
+            console.log('value',value);
+        }
+
+        for ( const [key,val] of Object.entries(obj)){
+            console.log('key',key,'val',val);
+        }
+    </script>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <script>
+        
+        function fun(a,b)
+        {
+            if ( a == 0 && b == 0)
+            {
+                throw new Error('a and b are zero')
+            }
+            else
+            {
+                return a/b ;
+            }
+        }
+        try
+        {
+            let data = fun (0,0) ;//NaN
+            console.log('data',data);
+        }
+        catch(e)
+        {
+            console.log('error',e.message);
+        }
+        finally
+        {
+            console.log('finally ever run');
+        }
+        console.log('end of function');
+    </script>
+</html>

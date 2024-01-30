@@ -1,0 +1,35 @@
+<html>
+    <script>
+        function div(a,b)
+        {
+            if ( a == 0 && b == 0)
+            {
+                throw new Error('a and b are zero')
+            }
+            else
+            {
+                return a/b ;
+            }
+        }
+        function another ()
+        {
+            try
+            {
+                let data =  div(10,2) ;//NaN
+                console.log('data',data);
+                return data ;
+            }
+            catch(e)
+            {
+                console.log('error',e.message);
+               // return 100 ;
+            }
+            finally
+            {
+                console.log('finally ever run');
+                //return 200 ;
+            }
+        }
+        console.log('end of function',another());
+    </script>
+</html>

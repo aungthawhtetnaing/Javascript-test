@@ -1,0 +1,34 @@
+<html>
+    <script>
+        let tar = {
+            x : 10 
+        };
+        let add = {
+            y : 20 ,
+            z : 12 
+        };
+        for ( let keys of Object.keys(add))
+        {
+            tar[keys] = add[keys]
+        };
+        console.log('tar',tar);
+
+        let defaul = {
+            width : 100 ,
+            height : 20 
+        }
+
+        let useradd = {
+            width :2000,
+            another : 'hell'
+        }
+        
+        let newda = {
+
+        }
+        let data = {...newda,...defaul,...useradd};
+        console.log('user add data',data);
+        console.log('user add data',newda);
+        console.log('user add data',data == newda);
+    </script>
+</html>

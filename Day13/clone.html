@@ -1,0 +1,16 @@
+<html>
+    <script>
+        let data = {
+            a : 10 ,
+            b : 30 ,
+            arr : [100]
+        }
+        let obj = {...data};
+
+        obj.arr.push(290);
+        console.log('arr',obj);
+        let deepCLone = JSON.parse(JSON.stringify(data));
+        data.arr.push(300);
+        console.log('deep',deepCLone);
+    </script>
+</html>

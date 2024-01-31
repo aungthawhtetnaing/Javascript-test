@@ -1,0 +1,46 @@
+<html>
+    <script>
+        let arr = [ 10 ,20,30] ;
+
+        for (let a = 0 ; a < arr.length ; a ++ )
+        {
+            console.log(arr[a]);
+        }
+
+        for (let a = arr.length-1 ; a >= 0 ; a -- )
+        {
+            console.log(arr[a]);
+        }
+
+        // for(let a = 0 ; a < 5 ; a++ )
+        // {
+        //     let str = "";
+        //     for (let i = 0 ; i < a + 1 ; i++ )
+        //     {
+        //         str += "*";
+        //     }
+        //     console.log(str);
+        // }
+
+        // for(let a = 0 ; a < 5 ; a++ )
+        // {
+        //     let str = "";
+        //     for (let i = 0 ; i < 5-a ; i++ )
+        //     {
+        //         str += "*";
+        //     }
+        //     console.log(str);
+        // }
+
+        for(const item of arr)
+        {
+            console.log('Item ',item);
+            //print(item);
+        }
+        function print(x)
+        {
+            console.log(x);
+        }
+        arr.forEach(print);
+    </script>
+</html>

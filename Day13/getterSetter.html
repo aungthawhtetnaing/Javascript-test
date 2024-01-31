@@ -1,0 +1,58 @@
+<html>
+    <script>
+        let data = {
+            name : 'at',
+            _age : 22 ,
+            get age()
+            {
+                console.log('age',this._age);
+                return this._age;
+            },
+            set age(newage)
+            {
+                if ( newage >= 0 && newage <= 100 )
+                {
+                    this._age = newage ;
+                }
+            }
+        };
+        data.age = 50 ;
+        console.log('data',data.age);
+
+        let circle = {
+            radius : 100 ,
+            get area()
+            {
+                console.log('area value');
+                return Math.PI*this.radius*this.radius;
+            }
+        }
+        console.log('circle area',circle.area);
+
+
+        let bank = {
+            acc : 'Aungthae' ,
+            _amount : 10000 ,
+            get amount (){
+                console.log('show amount');
+                return this._amount ;
+            },
+            set amount (use)
+            {
+                if ( use >= 0 && use <= this._amount )
+                {
+                    console.log('you use balace');
+                    return this._amount=use ;
+                }
+                else 
+                {
+                    console.log('you have enough');
+                }
+            }
+        }
+       
+        bank.amount = 1000000;
+        console.log('use amount',bank.amount);
+      
+    </script>
+</html>

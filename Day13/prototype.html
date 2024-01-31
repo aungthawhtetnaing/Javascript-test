@@ -1,0 +1,33 @@
+<html>
+    <script>
+        let obj = {
+            name : 'AT' ,
+            age : 22 ,
+            address : {
+                town : 'yangon' ,
+                street : 'than lan'
+            }
+        }
+        console.log('obj',obj);
+        console.log('obj to string',obj.toString);
+        console.log('prototype',obj.__proto__);
+        //console.log('prototype',obj.__proto__.__proto__);
+
+        let data = {
+            x : 20 ,
+            b : [30]
+        }
+        let obj2 = Object.create(data);
+        console.log('obj2',obj2);
+        console.log('obj2',obj2.x);//read
+
+        obj2.x = 100 ;//write
+        obj2.b.push(10);//read
+        console.log('obj2',obj2);
+        console.log('obj2 parent',obj2.__proto__.x);
+
+        let obj3 = Object.create(data);
+        console.log('obj3',obj3);
+        console.log('obj3',obj3.b);
+    </script>
+</html>

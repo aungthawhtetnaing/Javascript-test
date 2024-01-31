@@ -1,0 +1,19 @@
+<html>
+    <script>
+        let arr = {
+            '0' : 100 ,
+            '1' : 200
+        }
+        console.log('arr in object',arr[0]);
+
+        let mapp = {} ;
+        mapp ['userId'] = 'user2' ;
+        console.log('mapp',mapp['userId']);
+
+        console.log('arr', arr?.city?.address);
+
+        console.log(delete arr[0]);
+        console.log('delete arr',arr);
+        console.log('delete proto',delete Object.prototype);
+    </script>
+</html>

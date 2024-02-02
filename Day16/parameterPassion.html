@@ -1,0 +1,32 @@
+<html>
+    <script>
+        function obj(a)
+        {
+            a ++ ;
+        }
+        let data = 10 ;//copy sematic
+        obj(data);
+        console.log('data',data);
+
+        function obj1 (objA)
+        {
+            objA.x ++ ;
+        }
+        let objarr ={
+            x : 100 
+        }
+
+        obj1(objarr);//reference sematic
+        console.log('obj',objarr.x);
+
+        function obj2 (objA)
+        {
+            objA = {
+                x : 100 
+            }
+        }
+        obj2(objarr);//reference sematic
+        console.log('arr',objarr.x);
+
+    </script>
+</html>

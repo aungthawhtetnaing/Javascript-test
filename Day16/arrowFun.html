@@ -1,0 +1,15 @@
+<html>
+    <script>
+        let fun = (x,y) => x+y ;
+        console.log('arrow fun',fun(1,3));
+
+        let fun2 = (x,y) => {
+            console.log('hello mutiple body arrow function');
+            return x + y ;
+        }
+        console.log('mutiple',fun2(4,6));
+
+        let fun3 = (x)=>({x});
+        console.log('object fun',fun3(20));
+    </script>
+</html>

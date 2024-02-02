@@ -1,0 +1,51 @@
+<html>
+    <script>
+        let arr = [ 10,20,1110,30,20,11,122]
+    
+        let str2 = arr.join(':');
+        console.log('join',str2);
+
+        let str = str2.split(':');
+        console.log('split',str);
+
+        console.log('tostring',arr.toString());
+        let sort = arr.sort((a,b)=>a-b);
+        console.log('arr',arr);
+
+
+        let obj = [
+            {
+                name : "Aung Aung" ,
+                age : 23 
+            },
+            {
+                name : "Mg Aung" ,
+                age : 20 
+            },
+            {
+                name : "Thaw Aung" ,
+                age : 34 
+            },
+            {
+                name : "Zaw Aung" ,
+                age : 20 
+            },
+        ]
+        function sortNameAndAge (objA,objB)
+        {
+            if(objA.age == objB.age )
+            {
+                objA.name.localeCompare(objB.name);
+            }
+            else
+            {
+                return objA.age - objB.age ;
+            }
+        }
+        let sortArray = obj.sort(sortNameAndAge);
+        console.log('sort name and array',obj);
+
+        sortArray=obj.reverse();
+        console.log('reverse',obj);
+    </script>
+</html>

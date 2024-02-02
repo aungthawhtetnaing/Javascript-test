@@ -1,0 +1,44 @@
+<html>
+    <script>
+        let arr = [ 1,3,4,53,1];
+        let red = arr.reduce((a,b)=>a+b);
+        console.log('reduce arr',red);
+
+        let minval = arr.reduce((a,b)=>Math.min(a,b));
+        console.log('min arr',minval);
+
+
+        let objArr =[
+            {
+                name : 'Aung Aung',
+                age : 23,
+                gender : 'male'
+            },
+            {
+                name : 'Mya Aung',
+                age : 25,
+                gender : 'male'
+            },
+            {
+                name : 'Mya Mya',
+                age : 30,
+                gender : 'female'
+            },
+            {
+                name : 'Hla Hla',
+                age : 15,
+                gender : 'female'
+            },
+            {
+                name : 'Aung Min',
+                age : 34,
+                gender : 'male'
+            },
+        ];
+        
+        let youngest = objArr
+                        .filter((x)=>x.gender == 'male')
+                        .reduce((x,y)=>x.age>y.age?y:x);
+        console.log('name',youngest.name);
+    </script>
+</html>

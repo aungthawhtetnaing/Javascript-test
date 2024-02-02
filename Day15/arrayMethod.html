@@ -1,0 +1,56 @@
+<html>
+    <script>
+        let data = [10,20,202,30] ;
+        // function print (x) 
+        // {
+        //     console.log(x);
+        // }
+        // data.forEach(print);
+        data.forEach((x)=>console.log(x));
+
+        function toupper (str)
+        {
+            return str.toUpperCase();
+        }
+        console.log(toupper('hello'));
+
+        let students =['mg mg','aung aung','taung taung'];
+
+        let upp = [];
+        // for (let a = 0; a < students.length; a++) {
+        //     upp.push(toupper(students[a]));
+        // }
+        upp = students.map((x)=>toupper(x))
+        console.log(upp);
+
+        let objArr =[
+            {
+                name : 'Aung Aung',
+                age : 23,
+                gender : 'male'
+            },
+            {
+                name : 'Mya Aung',
+                age : 25,
+                gender : 'male'
+            },
+            {
+                name : 'Mya Mya',
+                age : 30,
+                gender : 'female'
+            },
+            {
+                name : 'Hla Hla',
+                age : 17,
+                gender : 'female'
+            },
+            {
+                name : 'Aung Min',
+                age : 34,
+                gender : 'male'
+            },
+        ];
+        let name = objArr.map((x)=>x.name);
+        console.log('name',name);
+    </script>
+</html>

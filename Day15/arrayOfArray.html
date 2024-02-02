@@ -1,0 +1,23 @@
+<html>
+    <script>
+        let arr = [
+            [10,20,30],
+            [23,33,44],
+            [34,65,66]
+        ]
+        for( let i =0 ; i < arr.length ;i ++)
+        {
+            console.log("first array",arr[i]);
+            // for ( let j = 0 ; j < arr[i].length ; j ++ )
+            // {
+            //     console.log('second array',arr[i][j]);
+            // }
+            for ( let j = arr[i].length-1 ; j >= 0 ; j -- )
+            {
+                console.log('second array',arr[i][j]);
+                arr[i][j] *=2
+            }
+        }
+        console.log('arr',arr);
+    </script>
+</html>

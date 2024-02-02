@@ -1,0 +1,42 @@
+<html>
+    <script>
+        let num = [10,-20,39,34,-33,-34,334];
+        function pos(x){
+            return x > 0
+        }
+        let fil = num.filter(pos);
+        console.log('filter pos',fil);
+
+        let objArr =[
+            {
+                name : 'Aung Aung',
+                age : 23,
+                gender : 'male'
+            },
+            {
+                name : 'Mya Aung',
+                age : 25,
+                gender : 'male'
+            },
+            {
+                name : 'Mya Mya',
+                age : 30,
+                gender : 'female'
+            },
+            {
+                name : 'Hla Hla',
+                age : 17,
+                gender : 'female'
+            },
+            {
+                name : 'Aung Min',
+                age : 34,
+                gender : 'male'
+            },
+        ];
+        let name = objArr
+                        .filter((x)=>x.gender == 'male')
+                        .map((x)=>x.name);
+        console.log('name',name);
+    </script>
+</html>

@@ -1,0 +1,17 @@
+<html>
+    <script>
+        let arr = [20,30,49,-59];
+        const isGreater = (x) => x > 20 ;
+        let findarr = arr.find(isGreater);
+        console.log('findarr',findarr);
+        let index = arr.findIndex(isGreater);
+        console.log('findindex',index);
+
+        const isPosi = (x) => x > 0 ;
+        let pos = arr.every(isPosi);
+        console.log('Positive',pos);
+
+        let some = arr.some(isPosi);
+        console.log('Some',some);
+    </script>
+</html>

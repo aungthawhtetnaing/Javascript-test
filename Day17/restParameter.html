@@ -1,0 +1,21 @@
+<html>
+    <script>
+        function max(first=-Infinity,...rest)
+        {
+            console.log('first ',first);
+            console.log('rest ',rest);
+            let maxLength = first ;
+            for(const i of rest)
+            {
+                if(i>maxLength)
+                {
+                    maxLength = i;
+                }
+            }
+            console.log('max rest value');
+            return maxLength ;
+        }
+        console.log(max(1));
+        console.log(max(100,3,333,33));
+    </script>
+</html>

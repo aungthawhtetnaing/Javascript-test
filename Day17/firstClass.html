@@ -1,0 +1,28 @@
+<html>
+    <script>
+        //Rule1
+        function firstFun(first)
+        {
+            console.log('hello');
+        }
+        let fun =firstFun;
+        fun();
+
+        //Rule2
+        function acceptFun(fun)
+        {
+            console.log('accept Fun');
+            fun();
+        };
+        acceptFun(fun);
+
+        //Rule3
+        function getFun()
+        {
+            console.log('get Fun');
+            return fun;
+        }
+        getFun()();
+
+    </script>
+</html>

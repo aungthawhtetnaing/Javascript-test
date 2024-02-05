@@ -1,0 +1,31 @@
+<html>
+    <script>
+        function fun ()
+        {
+            let data = [];
+            function push (argument)
+            {
+                console.log('array is push');
+                return data.push(argument);
+            }
+            function pop()
+            {
+                console.log('array is pop');
+                return data.pop();
+            }
+            return{
+                push ,
+                pop
+            }
+        }
+        let arr = fun();
+        arr.push('100');
+        arr.push('300');
+        console.log(arr.pop());
+        console.log(arr.push('500'));
+        console.log('arr',arr);
+        arr.data =[];
+        console.log(arr.pop());
+        console.log(arr.data);
+    </script>
+</html>

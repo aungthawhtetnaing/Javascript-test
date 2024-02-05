@@ -1,0 +1,16 @@
+<html>
+    <script>
+        function fun (first,second,third )
+        {
+            if (arguments.length < fun.length)
+            {
+                console.warn('fun ',this.name,'is required',fun.length,'but forcued on',arguments.length);
+            }
+            console.log('first',first,'second',second,'third',third);
+        }
+        console.log('parameter length',fun.length);
+        fun('hello');
+        fun('hello','hi');
+        console.log('fun is an ohj',fun instanceof Object);
+    </script>
+</html>

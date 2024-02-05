@@ -1,0 +1,41 @@
+<html>
+    <script>
+        function profile ( name , age )
+        {
+            this.name = name ;
+            this.age = age;
+            this.display = function ()
+            {
+                console.log('name',this.name,'age',this.age);
+            };
+        };
+        let human = new profile('Aungthaw',22);
+        console.log('profileobject',human);
+        human.display();
+
+
+        let obj = {
+            name : 'Aungthaw',
+            display(message)
+            {
+                console.log('this ',this);
+                console.log('name',this.name,'message',message);
+            }
+        };
+        obj.display();
+        let fun = obj.display ;
+        let obj2 = {
+            name : 'Boogeyman'
+        }
+        fun.call(obj2,'Aungthawhtetnaing');
+
+        let arr = [1,2,4,5,-1,2];
+
+        console.log('min',Math.min.apply(Math,arr));
+
+        console.log('min',Math.min(...arr));
+        
+        let fun2 = obj.display.bind(obj2);
+        fun2('ok nrr srr');
+    </script>
+</html>

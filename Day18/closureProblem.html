@@ -1,0 +1,20 @@
+<html>
+    <script>
+        function Closure()
+        {
+            let arr = [] ;
+            for (let a = 0 ; a <5 ; a++ )//but var = a is an error get last loop data = 5
+            {
+                let funarr = function ()
+                {
+                    console.log('this is add val',a);
+                }
+                arr.push(funarr);
+            }
+            return arr ;
+        }
+        let arrfun = Closure() ;
+        arrfun[2]();
+        arrfun[3]();
+    </script>
+</html>

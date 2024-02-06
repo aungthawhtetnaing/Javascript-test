@@ -1,0 +1,17 @@
+<html>
+    <script>
+        function fun (n)
+        {
+            if (n == 0)
+            {
+                return 1 ;
+            }
+            else
+            {
+                return n * fun(n-1);
+            }
+        }
+        let recursive = fun;
+        console.log(recursive(4));
+    </script>
+</html>

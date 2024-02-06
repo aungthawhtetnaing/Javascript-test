@@ -1,0 +1,24 @@
+<html>
+    <script>
+        function first ()
+        {
+            console.log('second invoke');
+            let first = second();
+            console.log('first result',first);
+        };
+
+        function second ()
+        {
+            console.log('third invoke');
+            let second = third();
+            console.log('second result',second);
+            return 200+second ;
+        }
+        function third ()
+        {
+            console.log('third result');
+            return 20;
+        }
+        first();
+    </script>
+</html>
